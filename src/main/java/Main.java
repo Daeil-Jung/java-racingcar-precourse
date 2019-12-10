@@ -20,6 +20,9 @@ public class Main {
 		}
 
 		// 게임 반복 횟수를 받음
+		System.out.println("시도할 회수는 몇회인가요?");
+		int times = scanner.nextInt();
+
 		// 게임을 반복함
 		// 자동차의 위치를 받아와 우승자를 비교
 		// 우승자를 출력
