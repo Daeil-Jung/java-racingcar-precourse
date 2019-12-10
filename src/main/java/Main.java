@@ -35,6 +35,13 @@ public class Main {
 		}
 
 		// 자동차의 위치를 받아와 우승자를 비교
+		int max = 0;
+		for (int i = 0; i < carsAmount; i++) {
+			if (max < car[i].getPosition()) {
+				max = car[i].getPosition();
+			}
+		}
+
 		// 우승자를 출력
 	}
 }
