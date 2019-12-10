@@ -27,6 +27,14 @@ public class Car {
 		}
 	}
 
+	// 현재의 위치를 출력하는 메소드
+	public void printPosition() {
+		for (int i = 0; i < position; i++) {
+			System.out.print("-");
+		}
+		System.out.print("\n");
+	}
+
 	// 이름의 적합을 판단하는 메소드
 
 }
