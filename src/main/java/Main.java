@@ -16,7 +16,13 @@ public class Main {
 		carNamesList = carNames.split(",");
 		Car[] car = new Car[carsAmount];
 		for (int i = 0; i < carsAmount; i++) {
-			car[i] = new Car(carNamesList[i]);
+			// 자동차 이름의 길이를 검사함
+			if (carNamesList[i].length() <= 5 && carNamesList[i].length() > 0) {
+				car[i] = new Car(carNamesList[i]);
+			}
+			if (car[i] == null) {
+				throw new IllegalArgumentException("문자열의 길이가 5를 초과하면 안돼요.");
+			}
 		}
 
 		// 게임 반복 횟수를 받음
