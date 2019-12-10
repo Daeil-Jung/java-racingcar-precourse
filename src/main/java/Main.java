@@ -24,6 +24,16 @@ public class Main {
 		int times = scanner.nextInt();
 
 		// 게임을 반복함
+		System.out.println("실행결과");
+		for (int i = 0; i < times; i++) {
+			for (int j = 0; j < carsAmount; j++) {
+				System.out.print(car[j].getName() + " : ");
+				car[j].play();
+				car[j].printPosition();
+			}
+			System.out.print("\n");
+		}
+
 		// 자동차의 위치를 받아와 우승자를 비교
 		// 우승자를 출력
 	}
