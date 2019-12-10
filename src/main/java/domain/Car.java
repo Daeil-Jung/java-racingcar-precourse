@@ -1,11 +1,13 @@
 package domain;
 
 public class Car {
-	private final String name;
+	private String name;
 	private int position = 0;
 
 	public Car(String name) {
-		this.name = name;
+		if (isSafeName(name)) {
+			this.name = name;
+		}
 	}
 
 	public String getName() {
@@ -34,7 +36,4 @@ public class Car {
 		}
 		System.out.print("\n");
 	}
-
-	// 이름의 적합을 판단하는 메소드
-
 }
