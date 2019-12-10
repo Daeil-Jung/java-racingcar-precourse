@@ -43,5 +43,12 @@ public class Main {
 		}
 
 		// 우승자를 출력
+		String winnerPrintout = "";
+		for (int i = 0; i < carsAmount; i++) {
+			if (car[i].getPosition() == max) {
+				winnerPrintout = winnerPrintout.concat(car[i].getName() + ", ");
+			}
+		}
+		System.out.println(winnerPrintout + "\b\b가 최종 우승했습니다.");
 	}
 }
